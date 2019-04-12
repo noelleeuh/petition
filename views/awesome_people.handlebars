@@ -1,0 +1,29 @@
+<h3>These are all the awesome people who've signed the best petition ever</h3>
+
+<div class='magic'>
+    {{#signers}}
+        <div>
+            {{#if website}}
+                <a href='{{website}}' id="allSigners">{{firstname}} {{surname}}</a>
+            {{else}}
+                {{firstname}} {{surname}}
+            {{/if}}
+            {{#if age}}
+                {{age}}
+            {{/if}}
+            <a href='/signers/{{city}}'>{{city}}</a>
+        </div>
+    {{/signers}}
+</div>
+
+<div class='rainbow'>
+    <a href='/petition'>
+       <button>Go back to petition</button>
+    </a> &ensp;
+    <a href='/settings'>
+       <button>Edit your profile</button>
+    </a> &ensp;
+    <a href='/logout'>
+       <button>Log out</button>
+    </a>
+</div>

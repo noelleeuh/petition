@@ -1,0 +1,22 @@
+<p id='error'>An error occurred. You must fill all fields</p>
+
+<form method='POST'>
+    <div>
+        <input name='signature' type='hidden'>
+    </div>
+    <div>
+        <canvas id='sign'></canvas>
+    </div>
+    <input name='_csrf' type='hidden' value='{{csrfToken}}'>
+    <button>Submit signature</button>
+    <script src='/canvas/canvas.js'></script>
+</form>
+
+<div class='rainbow'>
+    <a href='/settings'>
+       <button>Edit your profile</button>
+    </a> &ensp;
+    <a href='/logout'>
+       <button>Log out</button>
+    </a> &ensp;
+</div>

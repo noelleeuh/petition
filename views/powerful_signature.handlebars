@@ -1,0 +1,26 @@
+<h1>Stop this madness!</h1>
+
+<p>This is just a template<br>
+where you insert a description<br>
+about your petition</p>
+
+<form method='POST'>
+    <div>
+        <input name='signature' type='hidden'>
+    </div>
+    <div>
+        <canvas id='sign'></canvas>
+    </div>
+    <input name='_csrf' type='hidden' value='{{csrfToken}}'>
+    <button>Submit signature</button>
+    <script src='/canvas/canvas.js'></script>
+</form>
+
+<div class='rainbow'>
+    <a href='/settings'>
+       <button>Edit your profile</button>
+    </a> &ensp;
+    <a href='/logout'>
+       <button>Log out</button>
+    </a> &ensp;
+</div>

@@ -1,0 +1,21 @@
+<div class='magic'>
+    <p>Please, fill your profile</p>
+    <form method='POST'>
+        <div>
+            <input name='age' value='{{age}}' placeholder='Age'>
+        </div>
+        <div>
+            <input name='city' value='{{city}}' placeholder='City'>
+        </div>
+        <div>
+            <input name='website' value='{{wsite}}' placeholder='Personal site'>
+        </div>
+        <input name='_csrf' type='hidden' value='{{csrfToken}}'>
+        <button>Next</button>
+    </form>
+    <div class='rainbow'>
+        <a href='/logout'>
+           <button>Log out</button>
+        </a>
+    </div>
+</div>

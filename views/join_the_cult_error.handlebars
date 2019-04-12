@@ -1,0 +1,32 @@
+<p id='error'>An error occurred. You must fill all fields</p>
+
+<div>
+    <h1>Join our mission</h1>
+</div>
+
+<div class='glitter'>
+    <form method='POST'>
+        <div>
+            <input name='firstName' value='{{fname}}' placeholder='Name'>
+        </div>
+        <div>
+            <input name='surname' value='{{sname}}' placeholder='Surname'>
+        </div>
+        <div>
+            <input name='email' value='{{mail}}' placeholder='Email address'>
+        </div>
+        <div>
+            <input name='password' type='password' value='{{pword}}' placeholder='Password'>
+        </div>
+        <input name='_csrf' type='hidden' value='{{csrfToken}}'>
+        <button>Sign up</button>
+    </form>
+
+    <div class='linkMessage'>
+        <p><i>Already have an account? &ensp;</i></p>
+        <a href='/login'>
+           <button>Sign in</button>
+        </a>
+    </div>
+</div>
+</div>

@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+html, button{font-family: Roboto; color: WhiteSmoke}
+
+* {
+    text-align: center;
+    margin:0;
+}
+
+body {
+    background-image: url('/pics/background.jpg'); /*Photo by Anders Jildén on Unsplash*/
+    background-size: cover;
+    opacity: 0.6;
+}
+
+input[name='signature'] {
+  width: 500px;
+  height: 250px;
+}
+
+#sign {
+    width: 495px;
+    height: 245px;
+    border: 2px darkgrey solid;
+    background: transparent;
+}
+
+#error {
+    color: red;
+}
+
+#allSigners {
+    color: grey
+}
+
+#signerSig {
+    border: 2px darkgrey solid;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    height: 50px;
+    opacity: 0;
+}
+
+footer {
+    height: 30px;
+    opacity: 0;
+}
+
+button {
+    border: 2px solid Gainsboro;
+    font-size: 1em;
+    padding: .25em .5em .3125em;
+    color: Gainsboro;
+    border-radius: .25em;
+    background: transparent;
+}
+
+input {
+    border: 2px solid WhiteSmoke;
+    font-size: 1.5em;
+    padding: .25em .5em .3125em;
+    color: WhiteSmoke;
+    border-radius: .25em;
+    background: transparent;
+}
+
+.glitter {
+    display:flex;
+    flex-direction: column;
+}
+
+.glitter input {
+    margin-bottom: 10px
+}
+
+.linkMessage {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: Violet;
+}
+
+.magic {
+    display:flex;
+    flex-direction: column;
+}
+
+.magic input {
+    margin-bottom: 10px;
+    font-size: 1.25em;
+}
+
+.rainbow {
+    display:flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.rainbow button {
+    border: 2px solid Violet;
+    font-size: 1em;
+    padding: .25em .5em .3125em;
+    color: Violet;
+}

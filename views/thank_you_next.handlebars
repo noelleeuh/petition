@@ -1,0 +1,24 @@
+<h1>THANK YOU FOR YOUR SUPPORT!</h1>
+
+{{#signers}}
+    <div>
+        <img id="signerSig" src={{signature}}>
+    </div>
+{{/signers}}
+
+<div>
+    <a href='/signers'>See all {{voters}} signers</a>
+</div>
+
+<div class='rainbow'>
+    <form method='POST'>
+        <input name='_csrf' type='hidden' value='{{csrfToken}}'>
+        <button type='submit'>Unsign</button>
+    </form> &ensp;
+    <a href='/settings'>
+       <button>Edit your profile</button>
+    </a> &ensp;
+    <a href='/logout'>
+       <button>Log out</button>
+    </a>
+</div>

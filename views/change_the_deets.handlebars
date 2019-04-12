@@ -1,0 +1,67 @@
+<div class='magic'>
+    <form method='POST'>
+        <div>
+            First name
+        </div>
+        <div>
+            <input name='firstName' value='{{fname}}'>
+        </div>
+
+        <div>
+            Last name
+        </div>
+        <div>
+            <input name='surname' value='{{sname}}'>
+        </div>
+
+        <div>
+            Email address
+        </div>
+        <div>
+            <input name='email' value='{{mail}}'>
+        </div>
+
+        <div>
+            Password
+        </div>
+        <div>
+            <input name='password' type='password' value='{{pword}}'>
+        </div>
+
+        <div>
+            Age
+        </div>
+        <div>
+            <input name='age' value='{{age}}'>
+        </div>
+
+        <div>
+            City
+        </div>
+        <div>
+            <input name='city' value='{{city}}'>
+        </div>
+
+        <div>
+            Personal site
+        </div>
+        <div>
+            <input name='website' value='{{wsite}}'>
+        </div>
+
+        <input name='_csrf' type='hidden' value='{{csrfToken}}'>
+
+        <button>Save changes</button>
+    </form>
+    <div class='rainbow'>
+        <a href='/petition'>
+           <button>Go back to petition</button>
+        </a> &ensp;
+        <a href='/signers'>
+           <button>See all suporters</button>
+        </a> &ensp;
+        <a href='/logout'>
+           <button>Log out</button>
+        </a>
+    </div>
+</div>

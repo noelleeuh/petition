@@ -1,0 +1,21 @@
+<div class='glitter'>
+    <p id='error'>An error occurred. Your must provide your email and password to access.</p>
+    <form method='POST'>
+        <div>
+            <input name='email' value='{{mail}}' placeholder='Email address'>
+        </div>
+        <div>
+            <input name='password' type='password' value='{{pword}}' placeholder='Password'>
+        </div>
+        <input name='_csrf' type='hidden' value='{{csrfToken}}'>
+        <button>Log in</button>
+    </form>
+
+
+    <div class='linkMessage'>
+        <p><i>Don't have an account? &ensp;</i></p>
+        <a href='/registration'>
+           <button>Register now</button>
+        </a>
+    </div>
+</div>
